@@ -15,29 +15,58 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test3333.cpp">
+    <ClCompile Include="2주차\2주차 실습1-1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="text4.c">
+    <ClCompile Include="2주차\2주차 실습1-2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="과제2.c">
+    <ClCompile Include="2주차\2주차 실습2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="과제3.c">
+    <ClCompile Include="2주차\test.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="2주차\text4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test2cpp.cpp">
+    <ClCompile Include="2주차\과제2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test3.cpp">
+    <ClCompile Include="2주차\과제3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="실습1-2.c">
+    <ClCompile Include="2주차\실습1-2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3주차\3주차 실습1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\순차자료구조.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\피보나치수열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\순차자료구조 실습 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\순차자료구조 실습 3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\실습4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\listS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차\ex3_4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3주차\listS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
