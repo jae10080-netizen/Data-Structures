@@ -30,7 +30,7 @@
     <ClCompile Include="2주차\text4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="2주차\과제2.c">
+    <ClCompile Include="2주차\과제2-2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2주차\과제3.c">
@@ -61,6 +61,30 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="3주차\ex3_4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\포인터 실습.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\실습 3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\실습4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\과제1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\실습5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\과제2-1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\실습6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2주차\과제4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
