@@ -4,17 +4,17 @@
 typedef struct ListNode {
 	char data[4];
 	struct ListNode* link;
-} listNode;
+} ListNode;
 
 // 리스트의 시작을 나타내는 head 노드를 구조체로 정의
 typedef struct {
-	listNode* head;
-} linkedList_h;
+	ListNode* head;
+} ListHead;
 
-linkedList_h* createLinkedList_h(void);
-void printList(linkedList_h* CL);
-void insertFirstNode(linkedList_h* CL, char* x);
-void insertMiddleNode(linkedList_h* CL, listNode* pre, char* x);
-void deleteNode(linkedList_h* CL, listNode* old);
-listNode* searchNode(linkedList_h* CL, char* x);
+ListHead* createLinkedList_h(void);
+void printList(ListHead* CL);
+void insertFirstNode(ListHead* CL, char* x);
+void insertMiddleNode(ListHead* CL, ListNode* pre, char* x);
+void deleteNode(ListHead* CL, ListNode* old);
+ListNode* searchNode(ListHead* CL, char* x);
 

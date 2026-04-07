@@ -3,8 +3,8 @@
 #include "LinkedList.h"
 
 int main(void) {
-    linkedList_h* L;
-    listNode* p;
+    ListHead* L;
+    ListNode* p;
     L = createLinkedList_h(); // 공백 리스트 생성
 
     printf("(1) 리스트에 [월], [수], [일] 노드 삽입하기!\n");

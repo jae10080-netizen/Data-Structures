@@ -1,8 +1,8 @@
 #include "CircularLinkedList.h"
 
 int main(void) {
-	linkedList_h* CL;
-	listNode* p;
+	ListHead* CL;
+	ListNode* p;
 
 	CL = createLinkedList_h();	//공백 원형 연결 리스트 생성
 	printf("(1) 원형 연결 리스트 생성하기! \n");

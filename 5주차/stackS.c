@@ -48,7 +48,7 @@ void printStack() {
 	printf("\n STACK [");
 	for (i = 0; i <= top; i++)
 		printf("%d ", stack[i]);
-	printf('] ');
+	printf("] ");
 }
 
 

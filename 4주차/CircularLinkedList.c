@@ -5,16 +5,16 @@
 #include "CircularLinkedList.h"
 
 // 공백 원형 연결 리스트 생성
-linkedList_h* createLinkedList_h(void) {
-    linkedList_h* CL;
-    CL = (linkedList_h*)malloc(sizeof(linkedList_h));
+ListHead* createLinkedList_h(void) {
+    ListHead* CL;
+    CL = (ListHead*)malloc(sizeof(ListHead));
     CL->head = NULL;
     return CL;
 }
 
 // 원형 연결 리스트 출력
-void printList(linkedList_h* CL) {
-    listNode* p;
+void printList(ListHead* CL) {
+    ListNode* p;
     printf("CL = (");
     p = CL->head;
     if (p == NULL) {
@@ -30,9 +30,9 @@ void printList(linkedList_h* CL) {
 }
 
 // 첫 번째 노드로 삽입
-void insertFirstNode(linkedList_h* CL, char* x) {
-    listNode* newNode, * temp;
-    newNode = (listNode*)malloc(sizeof(listNode));
+void insertFirstNode(ListHead* CL, char* x) {
+    ListNode* newNode, * temp;
+    newNode = (ListNode*)malloc(sizeof(ListNode));
     strcpy(newNode->data, x);
 
     if (CL->head == NULL) { // 리스트가 비어있는 경우
@@ -51,9 +51,9 @@ void insertFirstNode(linkedList_h* CL, char* x) {
 }
 
 // 중간 노드로 삽입
-void insertMiddleNode(linkedList_h* CL, listNode* pre, char* x) {
-    listNode* newNode;
-    newNode = (listNode*)malloc(sizeof(listNode));
+void insertMiddleNode(ListHead* CL, ListNode* pre, char* x) {
+    ListNode* newNode;
+    newNode = (ListNode*)malloc(sizeof(ListNode));
     strcpy(newNode->data, x);
 
     if (CL->head == NULL) { // 리스트가 비어있는 경우
@@ -67,9 +67,9 @@ void insertMiddleNode(linkedList_h* CL, listNode* pre, char* x) {
 }
 
 // 마지막 노드로 삽입
-void insertLastNode(linkedList_h* CL, char* x) {
-    listNode* newNode, * temp;
-    newNode = (listNode*)malloc(sizeof(listNode));
+void insertLastNode(ListHead* CL, char* x) {
+    ListNode* newNode, * temp;
+    newNode = (ListNode*)malloc(sizeof(ListNode));
     strcpy(newNode->data, x);
 
     if (CL->head == NULL) { // 리스트가 비어있는 경우
@@ -87,8 +87,8 @@ void insertLastNode(linkedList_h* CL, char* x) {
 }
 
 // 노드 삭제
-void deleteNode(linkedList_h* CL, listNode* old) {
-    listNode* pre;
+void deleteNode(ListHead* CL, ListNode* old) {
+    ListNode* pre;
     if (CL->head == NULL) return;
     if (CL->head->link == CL->head) { // 리스트에 노드가 하나만 있는 경우
         free(CL->head);
@@ -108,8 +108,8 @@ void deleteNode(linkedList_h* CL, listNode* old) {
 }
 
 // 노드 탐색
-listNode* searchNode(linkedList_h* CL, char* x) {
-    listNode* temp;
+ListNode* searchNode(ListHead* CL, char* x) {
+    ListNode* temp;
     temp = CL->head;
     if (temp == NULL) return NULL;
 

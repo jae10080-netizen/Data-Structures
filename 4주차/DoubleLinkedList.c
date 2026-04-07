@@ -5,15 +5,15 @@
 #include "DoubleLinkedList.h"
 
 // 공백 이중 연결 리스트 생성
-linkedList_h* createLinkedList_h(void) {
-	linkedList_h* DL = (linkedList_h*)malloc(sizeof(linkedList_h));
+ListHead* createLinkedList_h(void) {
+	ListHead* DL = (ListHead*)malloc(sizeof(ListHead));
 	DL->head = NULL;
 	return DL;
 }
 
 // 리스트 출력
-void printList(linkedList_h* DL) {
-	listNode* p;
+void printList(ListHead* DL) {
+	ListNode* p;
 	printf("DL = (");
 	p = DL->head;
 	while (p != NULL) {
@@ -25,8 +25,8 @@ void printList(linkedList_h* DL) {
 }
 
 // 노드 삽입 (pre 노드 뒤에 삽입)
-void insertNode(linkedList_h* DL, listNode* pre, char* x) {
-	listNode* newNode = (listNode*)malloc(sizeof(listNode));
+void insertNode(ListHead* DL, ListNode* pre, char* x) {
+	ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
 	strcpy(newNode->data, x);
 
 	if (DL->head == NULL) { // 리스트가 비어있을 때
@@ -49,7 +49,7 @@ void insertNode(linkedList_h* DL, listNode* pre, char* x) {
 }
 
 // 노드 삭제
-void deleteNode(linkedList_h* DL, listNode* old) {
+void deleteNode(ListHead* DL, ListNode* old) {
 	if (DL->head == NULL || old == NULL) return;
 
 	if (old->llink == NULL) { // 삭제할 노드가 첫 번째 노드인 경우
@@ -64,8 +64,8 @@ void deleteNode(linkedList_h* DL, listNode* old) {
 }
 
 // 노드 탐색
-listNode* searchNode(linkedList_h* DL, char* x) {
-	listNode* temp = DL->head;
+ListNode* searchNode(ListHead* DL, char* x) {
+	ListNode* temp = DL->head;
 	while (temp != NULL) {
 		if (strcmp(temp->data, x) == 0) return temp;
 		temp = temp->rlink;

@@ -2,8 +2,8 @@
 #include "DoubleLinkedList.h"
 
 int main(void) {
-	linkedList_h* DL;
-	listNode* p;
+	ListHead* DL;
+	ListNode* p;
 
 	DL = createLinkedList_h();
 	printf("(1) 이중 연결 리스트 생성하기! \n");

@@ -5,15 +5,15 @@
 #include "LinkedList.h"
 
 //공백 연결 리스트를 생성하는 연산
-linkedList_h* createLinkedList_h(void) {
-	linkedList_h* L;
-	L = (linkedList_h*)malloc(sizeof(linkedList_h));
+ListHead* createLinkedList_h(void) {
+	ListHead* L;
+	L = (ListHead*)malloc(sizeof(ListHead));
 	L->head = NULL; //공백 리스트이므로 NULL로 설정
 	return L;
 }
 //연결 리스트의 전체 메모리를 해제하는 연산
-void freeLinkedList_h(linkedList_h* L) {
-	listNode* p;
+void freeLinkedList_h(ListHead* L) {
+	ListNode* p;
 	while (L->head != NULL) {
 		p = L->head;
 		L->head = L->head->link;
@@ -23,8 +23,8 @@ void freeLinkedList_h(linkedList_h* L) {
 }
 
 //연결 리스트를 순서대로 출력하는 연산
-void printList(linkedList_h* L) {
-	listNode* p;
+void printList(ListHead* L) {
+	ListNode* p;
 	printf("L = (");
 	p = L->head;
 	while (p != NULL) {
@@ -36,18 +36,18 @@ void printList(linkedList_h* L) {
 }
 
 //첫 번째 노드로 삽입하는 연산
-void insertFirstNode(linkedList_h* L, char* x) {
-	listNode* newNode;
-	newNode = (listNode*)malloc(sizeof(listNode)); //삽입할 새 노드 할당
+void insertFirstNode(ListHead* L, char* x) {
+	ListNode* newNode;
+	newNode = (ListNode*)malloc(sizeof(ListNode)); //삽입할 새 노드 할당
 	strcpy(newNode->data, x);
 	newNode->link = L->head;
 	L->head = newNode;
 }
 
 //노드를 pre 뒤에 삽입하는 연산
-void insertMiddleNode(linkedList_h* L, listNode* pre, char* x) {
-	listNode* newNode;
-	newNode = (listNode*)malloc(sizeof(listNode));
+void insertMiddleNode(ListHead* L, ListNode* pre, char* x) {
+	ListNode* newNode;
+	newNode = (ListNode*)malloc(sizeof(ListNode));
 	strcpy(newNode->data, x);
 	if (L->head == NULL) {
 		newNode->link = NULL;
@@ -64,10 +64,10 @@ void insertMiddleNode(linkedList_h* L, listNode* pre, char* x) {
 }
 
 //마지막 노드로 삽입하는 연산
-void insertLastNode(linkedList_h* L, char* x) {
-	listNode* newNode;
-	listNode* temp;
-	newNode = (listNode*)malloc(sizeof(listNode));
+void insertLastNode(ListHead* L, char* x) {
+	ListNode* newNode;
+	ListNode* temp;
+	newNode = (ListNode*)malloc(sizeof(ListNode));
 	strcpy(newNode->data, x);
 	newNode->link = NULL;
 	if (L->head == NULL) {
@@ -81,8 +81,8 @@ void insertLastNode(linkedList_h* L, char* x) {
 }
 
 //리스트에서 노드 p를 삭제하는 연산
-void deleteNode(linkedList_h* L, listNode* p) {
-	listNode* pre;
+void deleteNode(ListHead* L, ListNode* p) {
+	ListNode* pre;
 	if (L->head == NULL) return;
 	if (L->head->link == NULL) {
 		free(L->head);
@@ -101,8 +101,8 @@ void deleteNode(linkedList_h* L, listNode* p) {
 }
 
 //리스트에서 x노드를 탐색하는 연산
-listNode* searchNode(linkedList_h* L, char* x) {
-	listNode* temp;
+ListNode* searchNode(ListHead* L, char* x) {
+	ListNode* temp;
 	temp = L->head;
 	while (temp != NULL) {
 		if (strcmp(temp->data, x) == 0) return temp;
@@ -112,10 +112,10 @@ listNode* searchNode(linkedList_h* L, char* x) {
 }
 
 //리스트의 노드 순서를 역순으로 바꾸는 연산
-void reverse(linkedList_h* L) {
-	listNode* p;
-	listNode* q;
-	listNode* r;
+void reverse(ListHead* L) {
+	ListNode* p;
+	ListNode* q;
+	ListNode* r;
 
 	p = L->head;
 	q = NULL;
