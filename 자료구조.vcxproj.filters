@@ -132,6 +132,30 @@
     <ClCompile Include="5주차\stackL.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="6주차\ex6_1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\queueS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\ex6_2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\CqueueS.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\lQueue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\ex6_3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\deQue.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6주차\ex6_4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3주차\listS.h">
@@ -156,6 +180,18 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="5주차\stackL.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="6주차\queueS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="6주차\cQueueS.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="6주차\lQueue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="6주차\deQue.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
