@@ -156,6 +156,18 @@
     <ClCompile Include="6주차\ex6_4.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9주차\traversalBT.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9주차\ex7_1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9주차\folderSize.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9주차\ex7_2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3주차\listS.h">
@@ -192,6 +204,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="6주차\deQue.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="9주차\traversalBT.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="9주차\folderSize.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
