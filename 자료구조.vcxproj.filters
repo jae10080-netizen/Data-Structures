@@ -168,6 +168,12 @@
     <ClCompile Include="9주차\ex7_2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11주차\adjMatrix.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11주차\ex8_1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="3주차\listS.h">
@@ -210,6 +216,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="9주차\folderSize.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="11주차\adjMatrix.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
